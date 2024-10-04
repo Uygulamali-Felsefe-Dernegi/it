@@ -3004,7 +3004,7 @@ function create_each_block(ctx) {
 			t2 = space();
 			share_button = element("share-button");
 			button = element("button");
-			t3 = text("Paylaş ");
+			t3 = text("Condividere ");
 			create_component(icon.$$.fragment);
 			t4 = space();
 
@@ -3036,7 +3036,7 @@ function create_each_block(ctx) {
 			var share_button_nodes = children(share_button);
 			button = claim_element(share_button_nodes, "BUTTON", { class: true, href: true });
 			var button_nodes = children(button);
-			t3 = claim_text(button_nodes, "Paylaş ");
+			t3 = claim_text(button_nodes, "Condividere ");
 			claim_component(icon.$$.fragment, button_nodes);
 			button_nodes.forEach(detach);
 			share_button_nodes.forEach(detach);
@@ -3176,7 +3176,7 @@ function create_fragment(ctx) {
 	let div1;
 	let t1;
 	let div2;
-	let raw0_value = `<iframe class="mailjet_f" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/x5hr/form?c=8870c5ff" width="100%" style="height: 0;"></iframe>` + "";
+	let raw0_value = `<iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/xtj9/form?c=446996cc" width="100%" style="height: 0;"></iframe>` + "";
 	let t2;
 	let div4;
 	let raw1_value = /*content*/ ctx[2].html + "";
