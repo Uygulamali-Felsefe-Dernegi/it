@@ -1,0 +1,382 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Associazione di filosofia applicata</title><!-- HEAD_svelte-1bph64b_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="icon" type="image/png" sizes="32x32" href="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1722343412225UFD_favicon.svg"><link rel="preconnect" href="https://fonts.bunny.net"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9K3TS78QE"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q9K3TS78QE');
+</script><script type="module" src="https://www.unpkg.com/@daviddarnes/share-button@1.1.3/share-button.js"></script><meta name="description" content="L'Associazione per la filosofia applicata è un'associazione filosofica fondata in Turchia nel 2024."><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  --color-primary: #9b8580;
+  --color-primary-light: #e9e2e2;
+  --color-accent: #6371a2;
+  --color-dark: #6c6e83;
+  --color-light: linear-gradient(to bottom, #76a6b5 0%, #ffffff 60%, #cccccc 85%, rgba(0, 0, 0, 0.5) 100%);
+  
+  /* Base values */
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 0;
+  --border-color: #e0e1e1;
+  --transition: 0.1s ease-in-out;
+}
+
+html {
+  font-size: 14px;
+  background: var(--color-light);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 13px; /* Daha iyi uyum için */
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Root element (use instead of body) */
+#page {
+  font-family: 'Merriweather', serif;
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: var(--color-light);
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Elements */
+.section-container {
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a.link {
+  line-height: 1.3;
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px);
+  transition: border var(--transition);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+/* Buttons */
+.button {
+  color: white;
+  background: var(--color-dark);
+  border-radius: 8px;
+  padding: 9px 16px;
+  transition: box-shadow var(--transition);
+  border: 0;
+}
+/* reset */
+@media (max-width: 600px) {
+.button {
+    padding: 6px 12px /* Küçük ekranlarda düğme içeriğini ayarlamak için */
+}
+  }
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent);
+  }
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+  }
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Content Section */
+.content {
+  max-width: 100%; /* Güncellendi: Tüm genişlikte kullanılabilir */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+.content img {
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+  }
+.content a.link {
+    font-weight: 500;
+    border-bottom: 2px solid var(--color-accent);
+    transform: translateY(-2px);
+    transition: border var(--transition);
+  }
+.content a.link:hover {
+      border-color: transparent;
+    }
+.content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+.content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+.content ul {
+    list-style: disc;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content ol {
+    list-style: decimal;
+    padding: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+.content blockquote {
+    padding: 2rem;
+    margin: 1.5rem 0;
+    border-left: 5px solid var(--color-accent);
+  }
+
+/* Flex utility */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Mobil uyumlu olması için */
+}
+</style><!-- HEAD_svelte-1bph64b_END -->
+      <style>header.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding-block:2rem;padding:1rem;margin:1rem;background:radial-gradient(circle at 10% 50%, rgba(85, 107, 47, 0.5) 0%, rgba(189, 183, 107, 0.5) 120%);border-radius:8px;position:relative;box-shadow:0 4px 8px rgba(0, 0, 0, 0.5);z-index:10}@media(max-width: 800px){header.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{padding:0 1rem 1rem;margin:0.3rem
+}}.logo.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{font-size:2.25rem;font-weight:600;line-height:1.2;width:12rem}.logo.svelte-l8sb3e img.svelte-l8sb3e.svelte-l8sb3e{filter:drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))}.desktop-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-l8sb3e nav.svelte-l8sb3e.svelte-l8sb3e{display:flex;gap:2rem}.desktop-nav.svelte-l8sb3e nav a.link.svelte-l8sb3e.svelte-l8sb3e{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem;font-weight:300}.desktop-nav.svelte-l8sb3e nav a.link.svelte-l8sb3e.svelte-l8sb3e:hover,.desktop-nav.svelte-l8sb3e nav.svelte-l8sb3e a.link .active.svelte-l8sb3e{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex
+}}.subnav-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{position:relative}.subnav-container.svelte-l8sb3e button.svelte-l8sb3e.svelte-l8sb3e{white-space:nowrap;font-weight:600}.subnav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex !important;flex-direction:column;position:absolute;z-index:20;top:100%;background-color:#fff;padding:1em}.mobile-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none
+}}.mobile-subnav-title.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{text-align:left;background-color:rgba(0, 0, 0, 0.1);padding:3px 10px}.mobile-subnav.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-direction:column;align-items:flex-start;gap:1em;margin-bottom:1em}.mobile-subnav.svelte-l8sb3e a.svelte-l8sb3e.svelte-l8sb3e{font-size:0.8em}#popup.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-l8sb3e button#close.svelte-l8sb3e.svelte-l8sb3e{position:absolute;right:1rem;top:1rem}.language-picker.svelte-l8sb3e select.svelte-l8sb3e.svelte-l8sb3e{background-color:transparent}.mobile-actions-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:flex-end;-moz-column-gap:0.5em;column-gap:0.5em;row-gap:0.5em}.lang-swither-mobile.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{vertical-align:top;padding:4px}.top-bar.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{width:100%}ul.socials.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem;justify-content:flex-end;padding-right:15px}@media(max-width: 800px){ul.socials.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{gap:0.3rem
+}}ul.socials.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e{color:#000;font-size:1.5rem;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:0.1s transform}ul.socials.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e:hover{transform:scale(1.1)}ul.socials.svelte-l8sb3e li.svelte-l8sb3e a.svelte-l8sb3e{font-size:1.5rem;padding:0.75rem}.search-container.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{margin-left:auto;background-color:#fff;display:flex;align-items:center;border-radius:8px;overflow:hidden;position:relative}.search-container.svelte-l8sb3e .search.svelte-l8sb3e.svelte-l8sb3e{padding:0.4rem 1rem}.hidden.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{display:none!important}.searchResults.svelte-l8sb3e.svelte-l8sb3e.svelte-l8sb3e{position:absolute;background-color:#fff;top:100%;left:0;width:100%}.searchResults.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e{cursor:pointer;padding:1rem}.searchResults.svelte-l8sb3e li.svelte-l8sb3e.svelte-l8sb3e:hover{background-color:#ddd}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:2rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:2rem}.teaser.svelte-1bbd13f.svelte-1bbd13f{display:grid;gap:1rem}.teaser.text_under_image.svelte-1bbd13f.svelte-1bbd13f{display:flex;flex-direction:column;align-items:center;width:100%}.teaser.text_under_image.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;max-width:900px;min-width:300px;-o-object-fit:contain;object-fit:contain;margin-bottom:1rem;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.text_image_right.svelte-1bbd13f.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f.svelte-1bbd13f{display:flex;align-items:center;justify-content:space-between;width:100%}.teaser.text_image_right.svelte-1bbd13f .image-right.svelte-1bbd13f{order:1;margin-left:1rem;width:50%}.teaser.text_image_left.svelte-1bbd13f .image-left.svelte-1bbd13f{order:0;margin-right:1rem;width:50%}.teaser.text_image_right.svelte-1bbd13f img.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f img.svelte-1bbd13f{width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:2px solid transparent;border-radius:8px;box-shadow:0 0 25px rgba(0, 0, 0, 0.8)}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:50%;min-height:300px;text-align:justify;padding:1rem;box-sizing:border-box}.teaser.only_text.svelte-1bbd13f .body.svelte-1bbd13f{width:80%;text-align:justify;padding:0.5rem 0}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:2rem;font-weight:600;text-align:center}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{line-height:1.5;text-align:justify}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{display:inline-block;padding:10px 20px;background-color:#6371a2;color:white;text-decoration:none;border-radius:5px;font-size:16px;font-weight:600;text-align:center;transition:background-color 0.3s ease;margin-top:1rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f:hover{background-color:#45a049}@media(max-width: 768px){.section-container.svelte-1bbd13f.svelte-1bbd13f{padding:1rem}.teasers.svelte-1bbd13f.svelte-1bbd13f{grid-template-columns:1fr}.teaser.svelte-1bbd13f .title.svelte-1bbd13f{font-size:1.5rem}.teaser.svelte-1bbd13f .description.svelte-1bbd13f{font-size:0.9rem}.teaser-button.svelte-1bbd13f.svelte-1bbd13f{padding:8px 16px;font-size:14px}.teaser.text_under_image.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{width:90%}.teaser.text_image_right.svelte-1bbd13f .body.svelte-1bbd13f,.teaser.text_image_left.svelte-1bbd13f .body.svelte-1bbd13f{min-height:auto}}
+.share-container.svelte-1isqcnz.svelte-1isqcnz{width:100%;display:flex;justify-content:space-between}button.svelte-1isqcnz.svelte-1isqcnz{background-color:var(--color-dark)}footer.svelte-1isqcnz.svelte-1isqcnz{padding-top:2em;color:black;background:radial-gradient(circle at 10% 50%, rgba(85, 107, 47, 0.5) 0%, rgba(189, 183, 107, 0.5) 120%)}.section-container.svelte-1isqcnz.svelte-1isqcnz{display:flex;justify-content:space-between;gap:4rem}@media(max-width: 500px){.section-container.svelte-1isqcnz.svelte-1isqcnz{flex-wrap:wrap}}share-button.svelte-1isqcnz.svelte-1isqcnz{display:inline-block;margin-top:1rem;margin-right:1rem;margin-bottom:1rem}share-button.svelte-1isqcnz button.svelte-1isqcnz{align-items:center;gap:0.2rem;width:auto}.nav-items.svelte-1isqcnz.svelte-1isqcnz{display:flex;flex-wrap:wrap;gap:4rem}.nav-items.svelte-1isqcnz ul.svelte-1isqcnz{display:grid;gap:0.5rem}.nav-items.svelte-1isqcnz h3.svelte-1isqcnz{font-weight:500;font-size:1.5rem;margin-bottom:1rem}ul.socials.svelte-1isqcnz.svelte-1isqcnz{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:0.2rem;justify-content:flex-start;padding-right:15px}@media(max-width: 800px){ul.socials.svelte-1isqcnz.svelte-1isqcnz{gap:0.3rem
+  }}ul.socials.svelte-1isqcnz li.svelte-1isqcnz{color:#000;font-size:1.5rem;display:flex;align-items:center;justify-content:flex-start;border-radius:50%;transition:0.1s transform}ul.socials.svelte-1isqcnz li.svelte-1isqcnz:hover{transform:scale(1.1)}ul.socials.svelte-1isqcnz li a.svelte-1isqcnz{font-size:1.5rem;padding:0 0.75rem 0 0}.mailjet_f{height:220px!important;margin:auto;flex:0 0 310px;width:310px}.rights.svelte-1isqcnz.svelte-1isqcnz{text-align:center;padding-bottom:1rem}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-3423f317"><header class=" svelte-l8sb3e"><div class="top-bar svelte-l8sb3e"><ul class="socials svelte-l8sb3e"><li class="svelte-l8sb3e"><a href="https://tr.linkedin.com/in/uygulamalifelsefedernegi" aria-label="Linkedin" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://x.com/Ufelsefeder" aria-label="X" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://www.instagram.com/ufelsefeder/" aria-label="Instagram" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><!-- HTML_TAG_END --></svg></a>
+    </li><li class="svelte-l8sb3e"><a href="https://www.youtube.com/@UygulamaliFelsefeDernegi" aria-label="Youtube" class="svelte-l8sb3e"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/><!-- HTML_TAG_END --></svg></a>
+    </li></ul></div>
+  <div class="desktop-nav svelte-l8sb3e"><a href="/" class="logo svelte-l8sb3e"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png" alt="Associazione di filosofia applicata" class="svelte-l8sb3e"></a>
+    <nav class="svelte-l8sb3e"><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Informazioni</button>
+                <a class="hidden link svelte-l8sb3e" href="">Informazioni</a>
+              </div><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Blog</button>
+                <a class="hidden link svelte-l8sb3e" href="/blog">Blog</a>
+              </div><div class="subnav-container svelte-l8sb3e"><button type="button" class="svelte-l8sb3e">Eventi</button>
+                <a class="hidden link svelte-l8sb3e" href="/announcements">Eventi</a>
+              </div>
+        <div class="language-picker svelte-l8sb3e"><select class="svelte-l8sb3e"><option value="tr">TR </option><option value="en">EN </option><option value="it">IT </option></select></div></nav></div>
+  <div class="mobile-nav svelte-l8sb3e"><a href="/" class="logo svelte-l8sb3e"><img src="https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png" alt="Associazione di filosofia applicata" class="svelte-l8sb3e"></a>
+    <div class="mobile-actions-container svelte-l8sb3e"><button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><rect width="18" height="2" x="3" y="11" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" fill="currentColor" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" fill="currentColor" rx=".95" ry=".95"/><!-- HTML_TAG_END --></svg></button>
+        <button class="lang-swither-mobile svelte-l8sb3e">EN</button></div>
+    </div>
+
+  <div class="flex search-container svelte-l8sb3e"><input class="search svelte-l8sb3e" type="text" placeholder="search" value="">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" style="font-size: 2rem;color: #999; " class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5l-1.5 1.5l-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16A6.5 6.5 0 0 1 3 9.5A6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14S14 12 14 9.5S12 5 9.5 5"/><!-- HTML_TAG_END --></svg></div>
+    </header>
+
+ 
+          </div> 
+<div class="section" id="section-2bfeb890"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_sotto_immagine svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">Umanità su un pianeta bruciato</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Di recente, al Norton Simon Museum of Art di Pasadena, in California, mi sono ritrovato a pensare a <em>Il gelso</em> di Vincent van Gogh (1889), uno dei quadri preferiti di Van Gogh, ma dipinto in un momento decisamente travagliato di una vita piena di problemi. Van Gogh era stato recentemente ricoverato in un ospedale psichiatrico a <em>Saint-Rémy-de-Provence</em>, cercando di riprendersi dal delirio seguito al famoso incidente in cui si tagliò l'orecchio. Mentre era in cura, dipinse <em>Il gelso</em>, oltre ad altre opere famose come <em>La notte stellata</em> e <em>Suspens</em>. Morì per mano sua meno di un anno dopo, tre settimane dopo aver scritto una lettera al fratello Theo rassicurandolo che <em>"amo ancora molto l'arte e la vita"</em>. Si sparò in un campo dove stava dipingendo, ma la ferita non fu immediatamente mortale e fu in grado di tornare a piedi nella sua stanza all'<em>Auberge Ravoux</em>. Van Gogh morì la sera successiva. Theo, accorso al suo fianco, riferì che le sue ultime parole furono <em>la tristesse durera toujours</em> ("il dolore durerà per sempre").</p>
+<p><em>Le pennellate vivaci e l'<em>impasto</em> de Il gelso</em> mi affascinano. Attira lo spettatore in un mondo strutturato e tridimensionale, completamente diverso dalle linee studiate e pulite della pittura classica. L'etichetta della galleria si spinge fino a descriverlo come "quasi una scultura a basso rilievo". Il contrasto tra la collina rocciosa e luminosa, i colori autunnali scuri dell'albero e il cielo blu scuro conferisce al dipinto una vitalità e un'energia particolari. Mi ricorda il mondo naturale, o meglio, risveglia in me la sensazione del mondo naturale. E anche se il paesaggio di Saint Rémy non è quello della mia giovinezza, in modo quasi proustiano mi riporta agli anni che ho trascorso sotto il cielo aperto lavorando come guida alpina prima di tornare alla scuola di specializzazione.</p>
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-049e0a9e"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_immagine_destra svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">I.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>In questo particolare giorno di metà inverno, tuttavia, mi sono trovato disturbato e distratto, incapace di collegarmi all'immagine o a ricordi familiari e concreti del mondo naturale. Due settimane prima, le forze militari russe avevano invaso l'Ucraina. L'invasione non è stata, ovviamente, una sorpresa. Il pensiero di Putin, come quello di tutti i tiranni e i prepotenti, era <em>oderint dum metuant</em> ("che odino finché hanno paura"). Era chiaro che aveva aspirazioni per una "grande Russia" e che non c'era nessuno in Occidente che si sarebbe opposto con sufficiente forza per dissuaderlo. Quindi non è stato lo shock o la sorpresa a distrarmi in quel giorno di metà inverno; piuttosto, è stata la crescente consapevolezza del dolore che consuma le persone come me mentre vagavo per i corridoi del museo, contemplando oziosamente la pittura post-impressionista. Un paesaggio raso al suolo. Una cultura sotto assedio. Civili giustiziati. Donne sotto attacco. Bambini orfani e sfollati. Nel frattempo, i miei amici del museo si aggiravano nelle fresche ombre della galleria, assorti nell'ammirare i <em>Tulipani in vaso</em> di Cézanne.</p>
+<p>Di fronte agli orrori che si stavano svolgendo nell'Europa dell'Est, come si poteva avere l'audacia di passare un pomeriggio a sognare a occhi aperti o a contemplare l'estetica? Questi divertimenti banali sembravano ingiustificati, persino orribili. Anche il pensiero di tornare all'università e passare la serata a parlare con i miei studenti dell'identità narrativa de I morti di James Joyce mi imbarazzava.</p>
+<p>I miei pensieri ricordavano i miei banali giorni di scuola di specializzazione. Qui, mentre mettevo in dubbio il valore dello studio della filosofia, ricordavo la mia lotta per utilizzare le mie capacità ed energie (per quanto modeste) per avere un impatto diretto sul mondo: nutrire gli affamati, dare rifugio agli sfollati, proteggere l'ambiente. La maggior parte degli accademici scrive i propri articoli principalmente per altri accademici e li pubblica in riviste che spesso non vengono lette nemmeno dagli accademici per cui sono state scritte. Direi che c'è una qualità onanistica in questo sforzo, ma il carattere astratto, misurato e non sentimentale della maggior parte degli scritti accademici è ben lontano anche dai piaceri dell'onanismo. Un amico di Boston ha cercato di rassicurarmi ricordandomi che la vita dell'insegnamento è un tipo di altruismo a sé stante, un "atto di misericordia spirituale" che, pur non essendo intercambiabile con "atti di misericordia corporale" come dare da mangiare agli affamati o vestire gli ignudi, è comunque un bene necessario ed essenziale nel mondo. Ma di fronte a una grave ingiustizia, a un'orribile sofferenza o a una minaccia esistenziale, è difficile non mettere in discussione il valore del pensiero spassionato e dell'immaginazione, della poesia, dell'arte e, più in generale, delle scienze umane.</p>
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-77e33b8c"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_sotto_immagine svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">II.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Penso che i miei studenti, almeno alcuni di loro, si stiano ponendo domande simili. Il mondo che condividiamo è irto di gravi sfide e ci sono innumerevoli potenziali crisi esistenziali sulla scena, che aspettano pazientemente il loro momento. Abbiamo appena attraversato una pandemia globale senza precedenti da un secolo a questa parte e gli effetti della COVID-19 stanno ancora destabilizzando l'economia mondiale e si ripercuotono sulla vita dei singoli. Ricordo che all'inizio del gennaio 2020 dissi ai colleghi della mia università, che ancora negavano ciò che stava accadendo, che "ognuno di noi conoscerà qualcuno che morirà a causa di questa malattia". Purtroppo, ciò si è rivelato abbastanza vero. In un certo senso, però, siamo stati fortunati con il COVID-19. Altri agenti patogeni <em>zoonotici</em> (da animale a uomo) sarebbero stati incalcolabilmente peggiori. Il tasso di mortalità da infezione per il COVID-19 sembra aggirarsi intorno all'1-2%, ma il tasso di mortalità per la MERS è del 35%, per l'influenza H5N1 del 50-60% e per il Nipah del 40-75%. Ognuno di questi virus è stato trasmesso dagli animali all'uomo, ma non è ancora - cioè, non ancora - diventato abbastanza contagioso da causare una pandemia, che sarebbe una catastrofe in grado di rivaleggiare con la Peste di Giustiniano. Anche la guerra rimane una minaccia, come dimostra l'invasione dell'Ucraina. Le persone sofferenti che mi hanno fatto inorridire nella galleria quel pomeriggio, poche settimane prima vivevano vite come la mia: perseguivano obiettivi personali e professionali, visitavano i loro musei, sorseggiavano caffè e vino, giocavano con i loro figli, vivevano, ridevano, amavano. Nonostante il numero di persone che vivono libere dalla violenza sia più alto che in qualsiasi altro momento della storia dell'umanità, il risorgente autoritarismo, la retorica bellicosa e l'allarmante sciabolate nucleari ci ricordano che la democrazia, la libertà, la pace e la stabilità sono conquiste fragili che non vengono mai conquistate una volta per tutte. Non tutti i conflitti sono pianificati o addirittura frutto di calcoli razionali; possono iniziare involontariamente o accidentalmente e possono facilmente andare fuori controllo, aggravarsi e diffondersi. E, naturalmente, sullo sfondo di queste inquietanti possibilità, ribolle una minaccia esistenziale davvero senza precedenti, alla quale attualmente non stiamo prestando sufficiente attenzione. <Il cambiamento climatico antropogenico (indotto dall'uomo) ci sta cuocendo lentamente, ma ci sta cuocendo comunque, come la rana nella proverbiale, anche se fittizia, rana che non salta fuori dalla pentola che si riscalda lentamente.</p>
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-886c426d"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_sotto_immagine svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">III.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Ripeto, chi ha tempo per <em>Beowulf</em> in un mondo come questo? </p>
+<p>Nell'ottobre del 1939, C.S. Lewis predicò un sermone intitolato "Learning in Wartime" nella chiesa di St Mary the Virgin a Oxford. All'inizio di settembre di quell'anno, il Regno Unito aveva dichiarato guerra alla Germania e molti degli studenti presenti quel giorno erano in attesa di partire volontari o di essere arruolati. Tutti gli orrori di ciò che sarebbe accaduto in seguito - il blitz di Londra, il mattatoio sulle spiagge della Normandia, l'Olocausto, i campi di concentramento - non potevano essere conosciuti all'epoca in cui Lewis predicò. Eppure l'enormità di ciò che sarebbe accaduto era certamente presente nella mente di ogni singola persona presente in chiesa quel giorno. Questo era un Paese che, solo vent'anni prima, aveva versato il sangue di una generazione nella "guerra per porre fine alla guerra". Lewis stesso era un veterano della battaglia della Somme (1916). Ora lui e i suoi compagni di parrocchia si trovavano di nuovo di fronte all'oscuro pozzo della Götterdämmerung (<em>il crepuscolo degli dei</em>), in attesa di una catastrofe che veniva sempre più riconosciuta come inevitabile, anche se allarmantemente imprevedibile, una sensazione che l'amico di Lewis e collega veterano della battaglia della Somme, J.R.R. Tolkien, descrisse come "<em>il respiro profondo prima del tuffo</em>".</p>
+<p>Gli studenti di Oxford si saranno chiesti come un uomo ben fatto e di buona coscienza, seduto a una cena formale al Magdalen College, chiacchierando di Plotino o di Byron, potesse giustificare l'ombra della Germania nazista che si diffondeva in Europa e che presto avrebbe bussato alla porta dell'Inghilterra. Di fronte a ciò che stava per accadere - la minaccia incombente, il sacrificio richiesto per affrontarla, la possibilità che nonostante quel sacrificio tutto potesse andare perduto - come si poteva giustificare lo studio della matematica, la composizione di musica, l'osservazione al telescopio di galassie lontane o la lettura di poesie? Abbiamo proverbi sarcastici per descrivere tali attività: <em>suonare il violino mentre Roma brucia</em>, <em>lucidare gli ottoni del Titanic</em>...</p>
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-a1471d95"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_sotto_immagine svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">IV.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Come ci si può dedicare a <em>"attività di pace"</em> nel bel mezzo di una guerra, di un'epidemia o di un'altra catastrofe? Perché iniziare un progetto se non si ha speranza di portarlo a termine? Sono domande naturali da porsi quando ci si trova di fronte a crisi come quelle che ho menzionato qui; crisi che richiedono e dovrebbero richiedere la nostra attenzione e i nostri sforzi.
+<p>Diciamo che ora il mondo è diverso. È stata superata una linea. È una novità; dobbiamo agire. George Floyd ucciso dalla polizia in pieno giorno! Fosse comuni piene di innocenti fuori Mariupol! La mutazione del COVID-19! L'Antropocene è su di noi! </p>
+<p>Tutto vero, naturalmente. Ma Lewis osserva giustamente che una crisi come la guerra <em>"non crea certo una nuova situazione; esaspera solo la condizione umana permanente in modo che non possiamo più ignorarla"</em> e aggiunge: <Se questo è vero per la guerra, lo stesso si può dire per l'ingiustizia, le difficoltà economiche, le pandemie e molte altre crisi. Quante delle sfide che ci tengono svegli la notte sono davvero nuove in senso rilevante? Chiunque pensi che il conflitto in Ucraina o la pandemia COVID-19 siano senza precedenti soffre di un grave caso di miopia storica. I giovani erano meno ansiosi nel 1916, in attesa di essere inviati nelle Fiandre? O quando centinaia di migliaia di persone furono colpite dall'influenza "spagnola"? I genitori erano più ottimisti nell'ottobre 1962, quando si profilava una guerra nucleare globale?
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-78f11dc7"><section class="section-container svelte-1bbd13f"><div class="teasers svelte-1bbd13f">
+      <div class="teaser testo_immagine_destra svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">V.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>È vero che la storia è una lotteria e nessuno di noi può scegliere dove entrare nella grande narrazione dell'umanità. Ovunque e in qualsiasi momento siamo nati, nel bene e nel male, dobbiamo giocare le carte che ci vengono distribuite. La vita non è giusta; e nel lungo arco della storia troviamo ricchezza e povertà, carestia e abbondanza, tempi di guerra e tempi di pace, tempi di peste e tempi di salute. Eppure ogni generazione e ogni individuo vive sotto la costante minaccia dell'estinzione - letteralmente, la minaccia di essere "ridotto al nulla" - come la guerra che si è abbattuta su Lewis e i suoi compagni di parrocchia, inconoscibile ma certa.</p> <p>
+<p>Ma se ogni generazione sta cenando sotto la spada di Damocle, forse il punto non è che il "tempo della guerra" è il momento sbagliato per Beowulf, ma che non c'è mai stato un "tempo" per Beowulf. Forse dovremmo concentrarci su questioni più urgenti. Forse solo quando affronteremo queste sfide concrete ed esistenziali avremo guadagnato il diritto e il tempo per l'arte e la letteratura. Così, nel bel mezzo della guerra rivoluzionaria, John Adams scrisse a sua moglie Abigail: </p>
+<p><em>"Devo studiare la politica e la guerra perché i miei figli possano avere la libertà di studiare la matematica e la filosofia. I miei figli devono studiare la matematica e la filosofia, la geografia, la storia naturale, l'architettura navale, la navigazione, il commercio e l'agricoltura perché possano dare ai loro figli il diritto di studiare la pittura, la poesia, la musica, l'architettura, la scultura, l'arazzo e la porcellana"</em></p>.
+<hr /><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div>
+      <div class="teaser testo_sotto_immagine svelte-1bbd13f">
+
+        
+
+        <div class="body svelte-1bbd13f"><h2 class="title svelte-1bbd13f">VI.</h2> 
+          <div class="description svelte-1bbd13f"><!-- HTML_TAG_START --><p>Bu görüşün belli bir mantığı olduğunu inkar etmek mümkün değil. Ev yanıyorken, piyanonun başına oturup gamları çalışacak zaman yoktur. Eh, evimiz Dünya yanıyor. Tam anlamıyla benim memleketim Kaliforniya'da, ama aynı şekilde, daha az belirgin olsa da, dünyanın her yerinde bu durum geçerli. Belki de insanlar resim, edebiyat, müzik ve felsefe gibi şeyleri, bu şeyleri pratik hale getiren veya en azından pratik olmamalarını zararsız hale getiren barışı, sağlığı ve istikrarı kazanana kadar ertelemelidir. Şimdi, argüman şu, kolları sıvayıp adaletsizliğe, yoksulluğa, hastalığa ve iklim değişikliğine karşı savaş açmanın zamanı geldi.</p>
+<p>Ancak korkarım ki, kriz bitene kadar sanata, şiire, edebiyata veya felsefeye yönelmek standartımız olacaksa, bunlara asla zaman ayıramayacağız. Pax Romana sırasında bir Roma vatandaşının hayatı ile Cannae Muharebesi sonrasındaki bir Roma vatandaşının hayatı arasındaki farkı inkar etmek aptallık olsa da, her nesil ve her birey "beşeri bilimleri" önemsizleştiren stres ve tehditler altında yaşıyor. Lewis'in çağdaşı T.S. Eliot, koşulların gerçeği aramak veya hayatımızda anlam bulmak gibi görevler için her zaman elverişsiz olduğunu gözlemlemiştir. Bizi gerçeğin peşinde koşmaktan veya güzelliği takdir etmekten alıkoyacak acil bir endişe vardır ve her zaman olacaktır. Her zaman endişelenecek başka bir şey, ufukta beliren başka bir tehdit veya kriz olacaktır. Bu, Adams'ın ima ettiği gibi, tarihimizdeki belirli bir noktanın veya mevcut ahlaki ve toplumsal gelişimimizin başarısızlığının bir sonucu değildir; bu, insan olmanın koşuludur.</p>
+<p>Yani, gerçeği istiyorsak, güzelliği istiyorsak, sanat, şiir, edebiyat ve felsefe istiyorsak, koşullar elverişsizken bunları şimdi aramaya karar vermeliyiz. Doğru zamanı beklersek, asla başlayamayız çünkü bu <em>malları</em> ihtiyaçtan rahatsız olmadan ve kayıptan tehdit görmeden takip edebileceğimiz kesinlikle güvenli bir liman, ütopik bir kale yoktur.</p>
+<p>Bu, elbette, bizi alt etmekle tehdit eden veya başkalarını tehlikeye atan krizleri görmezden gelme izni değildir. Barış için çalışmak, yerinden edilmişleri barındırmak, hastaları iyileştirmek ve güvenlik oluşturmak, hayatı korumaya veya en azından uzatmaya yardımcı olan temel görevlerdir. Bu hedefleri takip etmeli ve bunlara ulaşmak için çok çalışmalıyız. Bunu asla unutmamalıyız. Ancak politikanın, ekonominin ve bilimin odak noktası olan bu pratik çabalar hayatı mümkün kılarken, gerçek, güzellik ve iyilik -ve bunları konu edinen sanat, şiir, edebiyat ve felsefe gibi "pratik olmayan" çabalar- hayatı ilk etapta değerli kılan şeydir. Güzelliğe, hayal gücüne, hayallere veya tefekküre zaman olmayan bir dünya -bu şeylere minnettarlık duymayan bir dünya- insanlık dışı bir dünya olurdu, yani yaşamaya değmeyen bir dünya. Güvenlik için savaşmaya olan bağlılığımız nedeniyle gerçek ve güzellikten vazgeçmek, savaş başlamadan yenilgiyi kabul etmek, onu güvence altına almak ve sonsuza dek korumak için beyhude bir arayışta insanlığımızdan vazgeçmektir.</p>
+<p>Ve insanlar, en azından bazılarımız, bunu yapmaya isteksizdir. Fayda ile güzellik, ilerleme ile sanat arasındaki sahte seçimi reddediyorlar. Bu insanlar, C.S. Lewis'in de dediği gibi, <em>"kuşatılmış şehirlerde matematiksel teoremler ileri sürüyor, mahkum hücrelerde metafizik tartışmalar yürütüyor, iskelelerde şakalar yapıyor, Quebec surlarına doğru ilerlerken son yeni şiiri tartışıyor ve Termopil'de saçlarını tarıyor. Bu gösteriş değil; doğamız bu."</em></p>
+<p>Sorun, krizlerin - adaletsizlik, acı, ölüm, umutsuzluk - dikkatimizi çekip çekmemesi değil. Açıkça çekiyorlar. Sorun, daha ziyade, bu krizlerin tüm dikkatimizi çekip çekmediğidir. Şiir ve sanat bizi dünyayı iyileştirme çabasından muaf tutmaz; ancak dünyayı kurtarma veya iyileştirme ihtiyacı da bizi - bunun güçlü bir iddia olduğunu biliyorum - içindeki güzelliğe ve iyiliğe tanıklık etme görevimizden muaf tutmaz. E.B. White şöyle yazmıştır: <em>"Dünya sadece baştan çıkarıcı olsaydı, bu kolay olurdu. Sadece zorlayıcı olsaydı, bu sorun olmazdı. Ama sabah kalktığımda dünyayı iyileştirme (veya kurtarma) arzusu ile dünyanın tadını çıkarma (veya tadını çeşitlendirmek) arzusu arasında kalmış bir şekilde uyanıyorum. Bu da günü planlamayı zorlaştırıyor.”</em> Bu çok yerinde görünüyor. Ve günü planlamak zorsa, bir hayatı planlamak daha da zordur.</p>
+<p>Hem dünyayı kurtarmaya hem de dünyanın tadını çıkarmaya çağrılıyoruz; ve iddia ediyorum ki, tanıklık ettiğimiz dünyanın tadını çıkararak ve başkalarına neden kurtarılmaya değer olduğunu hatırlatmaya yardımcı olarak ve belki de bunu yaparken sonuçta onu kurtarmaya küçük de olsa bir katkıda bulunuyoruz.</p>
+<h2 id="">***</h2>
+<p><strong><em>Dipnot</em></strong>: <small>Bu yazı, Brian Treanor'ın <a href="https://philosophersmag.com/humanities-on-a-burning-planet/">"Humanities on a Burning Planet"</a> başlıklı yazısından çevrilmiştir. Makale <em>Philosopher’s Magazine</em> dergisinde 28 Mart 2024 tarihinde yayımlanmıştır. Treanor, Loyola Marymount University’de Charles S. Casassa Chair ve Felsefe Profesörüdür. Yayınları arasında <em>Melancholic Joy: On Life Worth Living</em> (Bloomsbury 2021), <em>Emplotting Virtue</em> (SUNY 2014), ve <em>Aspects of Alterity</em> (Fordham 2006) bulunmaktadır. <small/></p><!-- HTML_TAG_END --></div>
+          </div>
+
+        
+      </div></div></section></div> 
+<div class="section" id="section-4b821b22"><footer class="svelte-1isqcnz"><div class="share-container svelte-1isqcnz"></div>
+  <div class="section-container svelte-1isqcnz"><div class="nav-items svelte-1isqcnz"><nav><h3 class="svelte-1isqcnz"></h3>
+           <ul class="socials svelte-1isqcnz"><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/><!-- HTML_TAG_END --></svg></a>
+                </li><li class="svelte-1isqcnz"><a class="svelte-1isqcnz"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><!-- HTML_TAG_END --></svg></a>
+                </li></ul>
+             
+              <share-button class="svelte-1isqcnz"><button class="flex button svelte-1isqcnz" href="#ddd">Paylaş <svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 1L8 5h3v9h2V5h3m2 18H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3v2H6v12h12V9h-3V7h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2"/><!-- HTML_TAG_END --></svg></button></share-button>
+            
+            <a class="button" href="/donate">Donazione</a>
+        </nav></div>
+    <div class="iframe-container"><!-- HTML_TAG_START --><iframe class="mailjet_f" data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://szwnp.mjt.lu/wgt/szwnp/x5hr/form?c=8870c5ff" width="100%" style="height: 0;"></iframe><!-- HTML_TAG_END --></div></div>
+    <div class="rights svelte-1isqcnz"><!-- HTML_TAG_START --><p>Associazione di Filosofia Applicata © 2024</p><!-- HTML_TAG_END --></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/2635b4c4-671e-44f9-87da-7cca6dc6049c.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-4b821b22'),
+              hydrate: true,
+              props: {"content":{"html":"<p>Associazione di Filosofia Applicata © 2024</p>","markdown":"Associazione per la filosofia applicata © 2024\n\n"},"menus":[{"links":[{"link":{"url":"/donate","label":"Donazione","active":false}}],"title":""}],"social":[{"icon":"mdi:linkedin","link":"Linkedin"},{"icon":"mdi:youtube","link":"Youtube"},{"icon":"mdi:twitter","link":"Twitter"},{"icon":"mdi:instagram","link":"Instagram"}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/1c784fd3-41c0-4725-95ab-d533afe20384.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-3423f317'),
+              hydrate: true,
+              props: {"":"","logo":{"image":{"alt":"Associazione di filosofia applicata","url":"https://vkicwhqjbrcbwhfzomjp.supabase.co/storage/v1/object/public/images/b274fd34-60fe-4f3f-bdfb-58926ab8f35f/1725395182330UFD_LOGO_TR.png"},"title":""},"site_nav":[{"link":{"url":"","label":"Informazioni","active":false},"submenu":[{"link":{"url":"/about-us","label":"Chi siamo","active":false}},{"link":{"url":"/articles-of-association","label":"Carta","active":false}},{"link":{"url":"/executive-board","label":"Consiglio di amministrazione","active":false}},{"link":{"url":"/our-representations","label":"I nostri uffici di rappresentanza","active":false}},{"link":{"url":"/contact","label":"Contatto","active":false}}]},{"link":{"url":"/blog","label":"Blog","active":false},"submenu":[{"link":{"url":"/blog","label":"Tutti gli articoli","active":false}},{"link":{"url":"blog/filosofia applicata-cos'è","label":"Cos'è la filosofia applicata","active":false}},{"link":{"url":"/kitap-nceleme","label":"Recensione del libro","active":false}}]},{"link":{"url":"/announcements","label":"Eventi","active":false},"submenu":[{"link":{"url":"/seminar","label":"Seminario","active":false}},{"link":{"url":"/symposium","label":"Simposio","active":false}},{"link":{"url":"/speeches","label":"Discorsi","active":false}},{"link":{"url":"/workshop","label":"Laboratori","active":false}}]}],"social":[{"icon":"mdi:linkedin","link":{"url":"https://tr.linkedin.com/in/uygulamalifelsefedernegi","label":"Linkedin","active":false}},{"icon":"mdi:twitter","link":{"url":"https://x.com/Ufelsefeder","label":"X","active":false}},{"icon":"mdi:instagram","link":{"url":"https://www.instagram.com/ufelsefeder/","label":"Instagram","active":false}},{"icon":"mdi:youtube","link":{"url":"https://www.youtube.com/@UygulamaliFelsefeDernegi","label":"Youtube","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
