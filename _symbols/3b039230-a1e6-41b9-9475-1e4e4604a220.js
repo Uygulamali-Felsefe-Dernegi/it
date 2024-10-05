@@ -1,4 +1,4 @@
-// Slider - Updated October 4, 2024
+// Slider - Updated October 6, 2024
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
